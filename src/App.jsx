@@ -1,3 +1,4 @@
+
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
@@ -23,6 +24,7 @@ function App() {
             <Route path="/detail/:id" element={<Detail />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+           
           </Routes>
           <Footer />
         </ButtonStateProvider>
