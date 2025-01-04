@@ -1,10 +1,6 @@
-
 /* eslint-disable react/prop-types */
-
 import { createContext, useState, useEffect } from "react";
-
 // eslint-disable-next-line react-refresh/only-export-components
-
 export const CartContext = createContext();
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState(
@@ -12,7 +8,6 @@ export const CartProvider = ({ children }) => {
       ? JSON.parse(localStorage.getItem("cartItems"))
       : []
   );
-
   const addToCart = (item) => {
     const isItemInCart = cartItems.find((cartItem) => cartItem.id === item.id);
     if (isItemInCart) {
@@ -43,7 +38,6 @@ export const CartProvider = ({ children }) => {
       );
     }
   };
-
   const clearCart = () => {
     setCartItems([]);
   };

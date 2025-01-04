@@ -30,7 +30,7 @@ const Navbar = () => {
     <div className="bg-teal-900 flex items-center h-20 fixed z-1 px-5 text-white w-full shadow-slate-800">
       <Link to="/" className="no-underline lg:flex-none flex-1">
         <h1 className="lg:text-2xl text-xl mt-0.5 font-bold text-white">
-          LA Collection
+          T-Store
         </h1>
       </Link>
 

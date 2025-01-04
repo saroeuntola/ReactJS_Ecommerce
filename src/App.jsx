@@ -14,19 +14,19 @@ import About from "./components/About";
 function App() {
   return (
     <BrowserRouter>
-        <SearchProvider> 
-          <ButtonStateProvider>
+      <SearchProvider>
+        <ButtonStateProvider>
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/shop" element={<Shop />} />
-            <Route path="/detail/:id" element={<Detail/>} />
-            <Route path="/contact" element={<Contact/>} />
-            <Route path="/about" element={<About/>} />
+            <Route path="/detail/:id" element={<Detail />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
           </Routes>
-          <Footer /> 
-          </ButtonStateProvider>
-        </SearchProvider>
+          <Footer />
+        </ButtonStateProvider>
+      </SearchProvider>
     </BrowserRouter>
   );
 }
